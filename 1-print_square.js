@@ -18,8 +18,8 @@ let size;
 
 // Check if the argument is in hexadecimal format
 if (process.argv[2].startsWith("0x")) {
-    // Convert hexadecimal to decimal
-    size = parseInt(process.argv[2], 16);
+    // Convert hexadecimal to decimal and then convert it back to string in base 10
+    size = parseInt(process.argv[2], 16).toString(10);
 } else {
     // Parse the argument as a decimal number
     size = parseInt(process.argv[2], 10);
