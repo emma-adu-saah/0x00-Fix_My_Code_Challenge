@@ -15,7 +15,7 @@ if (process.argv.length <= 2) {
 }
 
 size = parseInt(process.argv[2], 16);
-size = parseInt(size, 10);
+size = parseInt(size, 16);
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
